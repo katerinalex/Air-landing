@@ -1,5 +1,5 @@
 # Air landing
-Implementation of landing page according to Figma design using BEM and SCSS
+Implementation of landing page according to [Figma design](https://www.figma.com/file/7qwsWggv9BAxMi2VPhBuPr/Air-(formerly-Dia)?node-id=9138%3A35) using BEM and SCSS
 Page can adapt to the following screens:
 - Large screens 2560px
 - The design 1600px
@@ -10,4 +10,4 @@ Page can adapt to the following screens:
 
 [DEMO LINK](https://katerinalex.github.io/Air-landing/)
 
-To run project you need install node modules and after that use commant npm start
+To run project you need install node modules and after that use command npm start
