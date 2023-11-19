@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" >
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   </head>
   <body class="page__body">
     <header class="header page__section" >
@@ -95,23 +96,28 @@
             </a>
           </div>
           <div class="strategicAgency__slider">
-            <div class="strategicAgency__slider__content">
+            <div class="strategicAgency__slider__content swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/slider/Photo-2.png" alt="photo 1"></div>
+                <div class="swiper-slide"><img src="./images/slider/Photo-4.png" alt="photo 1"></div>
+                <div class="swiper-slide"><img src="./images/slider/Photo-5.png" alt="photo 1"></div>
+              </div>
               <div class="strategicAgency__slider__arrows_and_description">
                 <div class="strategicAgency__slider__arrows arrows">
-                  <a href="#left" class="arrow">
+                  <div class="arrow arrow--left swiper-button-prev">
                     <img
                       src="./images/slider/Arrow left.svg"
                       alt="arrow"
                       class="arrow__image"
                     >
-                  </a>
-                  <a href="#right" class="arrow">
+                  </div>
+                  <div class="arrow arrow--right swiper-button-next">
                     <img
                       src="./images/slider/Arrow right.svg"
                       alt="arrow"
                       class="arrow__image"
                     >
-                  </a>
+                  </div>
                 </div>
                 <div class="strategicAgency__slider__description">
                   <h4 class="strategicAgency__slider__description__title">INtro</h4>
@@ -322,7 +328,7 @@
           </div>
         </div>
       </section>
-      <section class="vision page__section">
+      <section id="work" class="vision page__section">
         <div class="container vision__container">
           <h2 class="vision__title">Vision, Passion, Results</h2>
           <p class="vision__description">We are sure that first-rate job is possible only if all three components are united.</p>
@@ -331,7 +337,6 @@
       </section>
 
       <div class="grid grid--contacts page__section page__section--dark">
-        <!-- <div class="container"></div> -->
         <section id="form" class="form grid__item grid__item--1-6">
           <div class="form__container">
             <h2 class="form__title">
@@ -470,10 +475,10 @@
           <nav class="footer__menu menu">
             <ul class="menu__list menu__list--footer">
               <li class="menu__item menu__item--footer">
-                <a href="#about-us" class="menu__link">About us</a>
+                <a href="#whoWeAre" class="menu__link">About us</a>
               </li>
               <li class="menu__item menu__item--footer">
-                <a href="#home" class="menu__link">Home</a>
+                <a href="#" class="menu__link">Home</a>
               </li>
               <li class="menu__item menu__item--footer">
                 <a href="#work" class="menu__link">Work</a>
@@ -491,5 +496,7 @@
     </footer>
 
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="./slider.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
