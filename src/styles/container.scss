@@ -12,4 +12,9 @@
     padding: 50px 120px;
     max-width: 1026px;
   }
+
+  @include onLargeDesktop() {
+    padding: 50px 120px;
+    max-width: 1026px;
+  }
 }

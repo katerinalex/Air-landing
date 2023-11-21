@@ -1,40 +1,23 @@
-import {Swiper, Navigation, Observer, ObserveParents, Parallax} from 'swiper';
+import {Swiper} from 'swiper';
 
-// init Swiper:
 const swiper = new Swiper('.swiper', {
-  // direction: 'horizontal',
   loop: true,
-  // cssMode: true,
-  // observer: true,
-  // observeParents: true,
-  // parallax:true,
-  // // observeSlideChildren: true,
-  // modules: [Navigation, Parallax, Observer, ObserveParents],
-
-  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.arrow--right',
+    prevEl: '.arrow--left',
   },
 });
 
-// import { Swiper, Parallax, Navigation} from 'swiper'
-// Swiper.use([ Parallax, Navigation ])
+const buttonElNext = document.querySelector('.arrow--right');
+const swiperEl = document.querySelector('.swiper').swiper;
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const swiper = new Swiper('.swiper-container', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-//     speed: 2400,
-//     parallax: true,
-//     observeParents: true,
-//     observer: true,
-//     modules: [Navigation],
 
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//   });
-// })
+buttonElNext.addEventListener('click', () => {
+  swiperEl.slideNext();
+});
+
+const buttonElPrev = document.querySelector('.arrow--left');
+
+buttonElPrev.addEventListener('click', () => {
+  swiperEl.slidePrev();
+});
